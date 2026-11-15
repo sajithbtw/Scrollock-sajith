@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ScrollLock" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/sl_accent</item>
+        <item name="colorOnPrimary">@color/sl_on_accent</item>
+        <item name="colorPrimaryContainer">@color/sl_accent_soft</item>
+        <item name="colorOnPrimaryContainer">@color/sl_text_primary</item>
+        <item name="colorSecondary">@color/sl_accent</item>
+        <item name="colorOnSecondary">@color/sl_on_accent</item>
+        <item name="android:colorBackground">@color/sl_background</item>
+        <item name="colorSurface">@color/sl_surface_card</item>
+        <item name="colorSurfaceVariant">@color/sl_surface_subtle</item>
+        <item name="colorOnSurface">@color/sl_text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/sl_text_secondary</item>
+        <item name="colorOutline">@color/sl_border</item>
+        <item name="colorOutlineVariant">@color/sl_border</item>
+        <item name="android:windowBackground">@color/sl_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+</resources>

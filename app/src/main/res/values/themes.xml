@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ScrollLock" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/sl_accent_strong</item>
+        <item name="colorOnPrimary">@color/sl_on_accent</item>
+        <item name="colorPrimaryContainer">@color/sl_accent_soft</item>
+        <item name="colorOnPrimaryContainer">@color/sl_text_primary</item>
+        <item name="colorSecondary">@color/sl_accent</item>
+        <item name="colorOnSecondary">@color/sl_on_accent</item>
+        <item name="android:colorBackground">@color/sl_background</item>
+        <item name="colorSurface">@color/sl_surface_card</item>
+        <item name="colorSurfaceVariant">@color/sl_surface_subtle</item>
+        <item name="colorOnSurface">@color/sl_text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/sl_text_secondary</item>
+        <item name="colorOutline">@color/sl_border</item>
+        <item name="colorOutlineVariant">@color/sl_border</item>
+        <item name="android:windowBackground">@color/sl_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <style name="Theme.ScrollLock.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/sl_brand_dark_bg</item>
+        <item name="android:statusBarColor">@color/sl_brand_dark_bg</item>
+        <item name="android:navigationBarColor">@color/sl_brand_dark_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="Theme.ScrollLock.Interruption" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/sl_brand_dark_bg</item>
+        <item name="android:statusBarColor">@color/sl_brand_dark_bg</item>
+        <item name="android:navigationBarColor">@color/sl_brand_dark_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <!-- Reusable Typography Styles -->
+    <style name="TextAppearance.ScrollLock.Display" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textColor">@color/sl_text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.ScrollLock.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textColor">@color/sl_text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.ScrollLock.Timer" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/jetbrains_mono</item>
+        <item name="android:textColor">@color/sl_text_primary</item>
+        <item name="android:textSize">46sp</item>
+    </style>
+
+    <style name="Widget.ScrollLock.BottomNav.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/sl_nav_indicator</item>
+    </style>
+</resources>

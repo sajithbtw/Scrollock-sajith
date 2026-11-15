@@ -1,0 +1,6 @@
+{
+  "name": "ScrollLock",
+  "description": "Break the scroll. Take control. A calm, minimal focus and doomscrolling-reduction Android app.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

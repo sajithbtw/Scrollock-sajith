@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Camera for on-device ML Kit Pose Detection & Study Page Counter -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+
+    <!-- Optional voice command recognition during hands-free workouts -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Haptic feedback for Task Alarms (normal install-time permission) -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Usage Access to read real daily app usage (user-enabled in Settings) -->
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Foreground service for reliable focus timer countdown -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <!-- Runtime notification permission on Android 13+ (API 33+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Do Not Disturb Policy Access to hide notification previews during Deep Focus -->
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <!-- Compliant package visibility for launchable installed apps (Android 11+) -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="com.sajith.scrolllock.ScrollLockApp"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ScrollLock">
+
+        <!-- Splash Screen (Launcher) -->
+        <activity
+            android:name="com.sajith.scrolllock.ui.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ScrollLock.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Primary Navigation Host (Adaptive Compact/Medium/Expanded) -->
+        <activity
+            android:name="com.sajith.scrolllock.ui.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.ScrollLock"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Compliant Focus Interruption & Workout-to-Unlock Gate -->
+        <activity
+            android:name="com.sajith.scrolllock.ui.FocusInterruptionActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ScrollLock.Interruption" />
+
+        <!-- In-App Scroll-Lock Demonstration Feed -->
+        <activity
+            android:name="com.sajith.scrolllock.ui.ScrollSandboxActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ScrollLock" />
+
+        <!-- Live ML Kit Pose Detection Workout Camera -->
+        <activity
+            android:name="com.sajith.scrolllock.ui.workout.WorkoutCameraActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ScrollLock.Interruption" />
+
+        <!-- Live CameraX Study Page-Turn Counter -->
+        <activity
+            android:name="com.sajith.scrolllock.ui.study.StudySessionActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ScrollLock.Interruption" />
+
+        <!-- Alarm & Task Challenge Dismissal Screen -->
+        <activity
+            android:name="com.sajith.scrolllock.ui.tasks.TaskAlarmActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ScrollLock.Interruption" />
+
+        <!-- Recorded Rep Replay & Joint Angle Inspector -->
+        <activity
+            android:name="com.sajith.scrolllock.ui.workout.RepReplayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ScrollLock" />
+
+        <!-- Jetpack Compose Permissions Onboarding -->
+        <activity
+            android:name="com.sajith.scrolllock.ui.OnboardingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ScrollLock" />
+
+        <!-- Permissions & Battery Optimization Onboarding -->
+        <activity
+            android:name="com.sajith.scrolllock.ui.PermissionsOnboardingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ScrollLock" />
+
+        <!-- Scheduled Reminder & Alarm Task Receiver (Play-Protect safe) -->
+        <receiver
+            android:name="com.sajith.scrolllock.service.TaskAlarmReceiver"
+            android:exported="false" />
+
+        <!-- Focus Timer Foreground Service -->
+        <service
+            android:name="com.sajith.scrolllock.service.FocusTimerService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="User-initiated focus session countdown timer and UsageStats distraction nudge monitor" />
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScrollLock</string>
+    <string name="app_tagline">Break the scroll. Take control.</string>
+
+    <!-- Greetings -->
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="dashboard_subtitle">Stay intentional with your attention today.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_apps">Apps</string>
+    <string name="nav_focus">Focus</string>
+    <string name="nav_insights">Insights</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Status Labels -->
+    <string name="status_ready">Ready to Focus</string>
+    <string name="status_active">Focus Lock Active</string>
+    <string name="status_deep_focus_active">Deep Focus Active</string>
+    <string name="status_paused">Session Paused</string>
+    <string name="status_completed">Session Complete</string>
+
+    <!-- Dashboard -->
+    <string name="btn_start_focus">Start Focus</string>
+    <string name="btn_resume_focus">Resume Focus</string>
+    <string name="btn_open_session">View Active Session</string>
+    <string name="label_selected_apps">Guarded Apps</string>
+    <string name="label_manage_apps">Manage Apps</string>
+    <string name="label_today_usage">Today\'s Usage</string>
+    <string name="label_selected_count_format">%d apps selected</string>
+    <string name="label_no_apps_selected">No apps selected yet</string>
+    <string name="label_usage_permission_needed">Usage Access is needed to read real screen time on this device.</string>
+    <string name="btn_enable_usage">Enable Usage Access</string>
+    <string name="label_usage_total_format">%s across guarded apps</string>
+    <string name="label_usage_device_format">%s total tracked today</string>
+    <string name="label_sandbox_title">In-App Scroll Barrier Bench</string>
+    <string name="label_sandbox_desc">Live UsageStats distraction alerts protect your chosen apps automatically during Focus. Use this test bench to preview ScrollLock\'s in-app touch barrier.</string>
+    <string name="btn_try_sandbox">Open Test Bench</string>
+    <string name="label_quick_insights">Insights</string>
+    <string name="label_quick_settings">Settings</string>
+    <string name="reels_blocker_title">Reels &amp; Shorts Guard</string>
+    <string name="reels_blocker_tile_active">Guarding Reels &amp; Shorts in %d apps</string>
+    <string name="reels_blocker_tile_needs_usage">Enable Usage Access to guard %d apps</string>
+    <string name="reels_blocker_tile_empty">Tap to guard Reels &amp; Shorts apps</string>
+    <string name="reels_blocker_tile_paused">Paused • Tap to resume Reels guard</string>
+
+    <!-- App Selection -->
+    <string name="apps_title">App &amp; Reels Controls</string>
+    <string name="apps_subtitle">Toggle "No Reels" to guard short-form video apps during Focus, or flip the switch to include an app in Focus Lock &amp; Workout-to-Unlock.</string>
+    <string name="apps_search_hint">Search installed apps…</string>
+    <string name="filter_all_apps">All Apps</string>
+    <string name="filter_reels_blocked">No Reels</string>
+    <string name="filter_selected_apps">Locked</string>
+    <string name="apps_empty_search">No matching launchable apps found.</string>
+    <string name="apps_usage_unavailable">Usage permission off</string>
+    <string name="apps_today_format">Today: %s</string>
+    <string name="apps_selected_badge">Locked</string>
+    <string name="btn_short_form_on">No Reels</string>
+    <string name="btn_short_form_off">Block Reels</string>
+    <string name="btn_block_reels_preset">Guard Reels &amp; Shorts</string>
+    <string name="cd_toggle_short_form">Toggle Reels and Shorts guard for this app</string>
+    <string name="cd_toggle_full_app_lock">Toggle full app lock</string>
+    <string name="toast_enable_usage_for_reels">Reels guard saved! Enable Usage Access &amp; Notifications in Settings to alert live during Focus.</string>
+
+    <!-- Focus Session & Deep Focus -->
+    <string name="focus_title">Focus Session</string>
+    <string name="focus_duration_label">Session Duration</string>
+    <string name="focus_duration_15">15 min</string>
+    <string name="focus_duration_25">25 min</string>
+    <string name="focus_duration_45">45 min</string>
+    <string name="focus_duration_60">60 min</string>
+    <string name="focus_duration_90">90 min</string>
+    <string name="focus_duration_custom">Custom</string>
+    <string name="focus_duration_custom_format">Custom (%dm)</string>
+    <string name="custom_duration_dialog_title">Custom Focus Duration</string>
+    <string name="custom_duration_dialog_subtitle">Choose any Deep Focus or standard Focus length from 5 to 180 minutes.</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_resume">Resume</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_start_another">Start Another Session</string>
+    <string name="btn_view_insights">View Insights</string>
+    <string name="focus_completion_title">Focus Session Completed</string>
+    <string name="focus_completion_summary_format">You stayed locked in for %1$d minutes. %2$d distraction attempts were flagged.</string>
+    <string name="focus_guard_active">UsageStats Focus Guard is active (Play-Protect safe).</string>
+    <string name="focus_guard_usage_fallback">Usage Access is off. Enable it in Settings to get live distraction alerts when guarded apps open.</string>
+    <string name="focus_no_apps_warning">Select at least one distracting app in the Apps tab to guard it during Focus.</string>
+
+    <string name="deep_focus_title">Deep Focus Mode</string>
+    <string name="deep_focus_subtitle">Hides notification previews via Do Not Disturb Policy and restricts non-essential internet distractions cleanly.</string>
+    <string name="deep_focus_hide_previews">Hide Notification Previews</string>
+    <string name="deep_focus_block_internet">Offline &amp; Non-Essential Net Shield</string>
+    <string name="deep_focus_dnd_granted">DND Ready</string>
+    <string name="deep_focus_dnd_grant">Grant DND Access</string>
+    <string name="deep_focus_panel_btn">Connectivity Panel</string>
+    <string name="deep_focus_data_saver_btn">Data Saver</string>
+    <string name="deep_focus_exceptions_btn">Manage Exceptions (%d allowed)</string>
+    <string name="deep_focus_exceptions_title">Deep Focus Exceptions</string>
+    <string name="deep_focus_exceptions_subtitle">Essential phone calls, SMS, alarms, keyboard, and Play Services stay connected automatically. Pick extra apps to keep allowed:</string>
+    <string name="deep_focus_summary_format">Shielding %d non-essential apps • Calls, SMS &amp; Alarms stay active</string>
+    <string name="deep_focus_badge_on">Deep Focus On</string>
+    <string name="deep_focus_badge_off">Deep Focus Off</string>
+    <string name="deep_focus_status_kept_online">Always Allowed</string>
+    <string name="deep_focus_status_shielded">Offline Shielded in Deep Focus</string>
+    <string name="deep_focus_timer_subtext">Deep Focus active • Notification previews hidden</string>
+    <string name="cd_toggle_deep_focus_exception">Allow app internet access during Deep Focus</string>
+
+    <!-- Focus Interruption Screen -->
+    <string name="interruption_badge">FOCUS LOCK ACTIVE</string>
+    <string name="interruption_title">Pause &amp; Breathe</string>
+    <string name="interruption_app_paused_format">%s is guarded during your focus session.</string>
+    <string name="interruption_remaining_label">TIME REMAINING</string>
+    <string name="interruption_reminder">You chose to break the scroll and stay present. Complete a quick workout set to unlock temporarily, or return cleanly.</string>
+    <string name="btn_return_to_focus">Return to Focus Session</string>
+    <string name="btn_open_dashboard">Go to Dashboard</string>
+    <string name="interruption_limitation_note">Triggered by user-approved Digital Wellbeing &amp; Workout Unlock Gate (strictly on-device).</string>
+    <string name="interruption_short_form_badge">REELS &amp; SHORTS GUARD</string>
+    <string name="interruption_short_form_title">Short-Form Feed Guarded</string>
+    <string name="interruption_short_form_paused_format">%s is guarded by ScrollLock during Focus.</string>
+    <string name="interruption_short_form_reminder">Reels and Shorts feeds stay guarded to protect your attention. Complete a quick set to earn temporary time, or return cleanly.</string>
+    <string name="interruption_short_form_note">Detected via Play-safe Usage Access guard (strictly on-device).</string>
+
+    <!-- Guard Notification Channels & Alerts -->
+    <string name="notif_channel_guard_name">Distraction Guard Alerts</string>
+    <string name="notif_channel_guard_desc">Heads-up nudges with Workout-to-Unlock actions when a guarded app opens</string>
+    <string name="guard_notif_app_title">%s is guarded during Focus</string>
+    <string name="guard_notif_app_body">Tap to return to Focus or complete a quick workout to unlock temporarily.</string>
+    <string name="guard_notif_reels_title">Reels &amp; Shorts Guard: %s</string>
+    <string name="guard_notif_reels_body">Step back from short-form feeds or complete a workout set to earn time.</string>
+    <string name="guard_notif_deep_title">Deep Focus Offline Shield: %s</string>
+    <string name="guard_notif_deep_body">Stay offline for Deep Focus, open App Data Settings, or return to Focus.</string>
+    <string name="guard_notif_action_data_settings">App Data Settings</string>
+
+    <!-- Insights -->
+    <string name="insights_title">Focus Insights</string>
+    <string name="insights_subtitle">Locally recorded sessions and focus patterns stored privately on your device.</string>
+    <string name="metric_total_focus">Total Focus</string>
+    <string name="metric_completed_sessions">Completed</string>
+    <string name="metric_interceptions">Interruptions</string>
+    <string name="chart_weekly_title">Last 7 Days Focus Activity (min)</string>
+    <string name="chart_empty_hint">Complete a focus session to see your daily activity bars.</string>
+    <string name="top_apps_title">Most Selected &amp; Guarded Apps</string>
+    <string name="top_apps_empty">No guarded app statistics recorded yet. Select apps and start a focus session.</string>
+    <string name="top_apps_detail_format">Selected %1$d times • %2$d interrupted</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_default_duration">Default Focus Duration</string>
+    <string name="settings_permissions">Permissions &amp; System Access</string>
+    <string name="settings_reels_blocker_switch">Guard Reels &amp; Short-Form Apps</string>
+    <string name="perm_dnd_title">Deep Focus Preview Hiding (DND Policy)</string>
+    <string name="perm_dnd_desc">Uses Android\'s official Do Not Disturb Policy to hide notification previews, peeking popups, and lock-screen banners during Deep Focus—preserving alarms and repeat callers.</string>
+    <string name="perm_dnd_steps">Setup: Open Do Not Disturb Access -> Select ScrollLock -> Allow.</string>
+    <string name="perm_usage_title">Usage Access (App &amp; Guard Monitor)</string>
+    <string name="perm_usage_desc">Reads foreground usage events and screen time strictly on-device to show real statistics and trigger Focus Guard notifications.</string>
+    <string name="perm_usage_steps">Setup: Open Usage Access Settings -> Select ScrollLock -> Allow usage tracking.</string>
+    <string name="perm_notifications_title">Focus Guard Notifications</string>
+    <string name="perm_notifications_desc">Displays live timer countdowns, completion alerts, and heads-up Workout-to-Unlock nudges while a Focus Session runs.</string>
+    <string name="status_enabled">Enabled</string>
+    <string name="status_not_enabled">Not Enabled</string>
+    <string name="btn_open_settings">Open Settings</string>
+    <string name="btn_grant_permission">Allow</string>
+
+    <string name="settings_limitations_title">Play Protect &amp; Android Safety Design</string>
+    <string name="settings_limitations_body">ScrollLock is built to obey Google Play Protect and Digital Wellbeing rules: it uses user-granted Usage Access, official Notification Policy (DND) preview suppression, Android\'s native Internet Connectivity Panel, and explicit heads-up Focus Guard alerts—with zero Accessibility window snooping and zero unauthorized background VPN interception.</string>
+    <string name="settings_privacy_title">Privacy &amp; Local Storage</string>
+    <string name="settings_privacy_body">All app selections, focus timers, and usage summaries stay strictly on your device in local SQLite &amp; SharedPreferences storage. ScrollLock has no accounts, no analytics, and zero network transmission.</string>
+    <string name="settings_version_format">ScrollLock v%s • Package: com.sajith.scrolllock</string>
+
+    <!-- Scroll-Lock Sandbox Feed -->
+    <string name="sandbox_title">Scroll-Lock Test Bench</string>
+    <string name="sandbox_subtitle">In-App Vertical Scroll Barrier Preview</string>
+    <string name="sandbox_toggle_label">Engage ScrollLock Barrier</string>
+    <string name="sandbox_barrier_active">Vertical scroll is locked</string>
+    <string name="sandbox_barrier_desc">This test bench demonstrates an in-app vertical scroll barrier alongside Play-safe UsageStats distraction alerts.</string>
+    <string name="btn_unlock_sandbox">Release Barrier</string>
+    <string name="sandbox_auto_lock_label">Auto-lock after 3 cards</string>
+    <string name="sandbox_scroll_count_format">Cards scrolled: %d / 3</string>
+
+    <!-- Notification Channels -->
+    <string name="notif_channel_timer_name">Focus Session Timer</string>
+    <string name="notif_channel_timer_desc">Ongoing countdown notification during active Focus Sessions</string>
+    <string name="notif_channel_alert_name">Focus Alerts</string>
+    <string name="notif_channel_alert_desc">Notifications when a Focus Session finishes</string>
+    <string name="notif_timer_running_format">Focus Lock Active • %s remaining</string>
+    <string name="notif_timer_paused_format">Focus Paused • %s remaining</string>
+    <string name="notif_timer_subtext">Selected distracting apps are guarded</string>
+    <string name="notif_complete_title">Focus Session Complete</string>
+    <string name="notif_complete_body">Great work. Your focus session has ended and Deep Focus settings are restored.</string>
+
+    <!-- Workout-to-Unlock & AI Trainer -->
+    <string name="btn_start_workout_unlock">Start Workout to Unlock</string>
+    <string name="interruption_workout_prompt_format">Complete %1$d %2$s to unlock %3$s for %4$d min</string>
+    <string name="workout_hub_title">AI Workout Trainer</string>
+    <string name="workout_start_standalone">Start AI Workout</string>
+    <string name="workout_replay_title">Rep Replay &amp; Analysis</string>
+    <string name="workout_no_replays">Complete at least 1 rep in the AI Workout Camera to unlock frame-by-frame Rep Replay.</string>
+    <string name="camera_perm_title">Camera Access Needed</string>
+    <string name="camera_perm_desc">ScrollLock runs Google ML Kit Pose Detection strictly on-device to count reps and check posture. No video is ever recorded or uploaded.</string>
+    <string name="btn_grant_camera">Allow Camera</string>
+    <string name="btn_open_app_settings">Open App Settings</string>
+    <string name="onboarding_title">Setup ScrollLock Guard</string>
+    <string name="onboarding_subtitle">Enable these Play-safe permissions so ScrollLock can count workouts on-device, hide previews in Deep Focus, and nudge you out of distractions.</string>
+    <string name="btn_onboarding_done">Continue to ScrollLock</string>
+    <string name="filter_social_games">Social &amp; Games</string>
+    <string name="btn_guard_social_games">Guard Social &amp; Games</string>
+    <string name="btn_permissions_guide">Permissions Setup Guide</string>
+    <string name="onboarding_section_core">Core System Permissions</string>
+    <string name="onboarding_readiness_label">Setup Progress</string>
+    <string name="onboarding_all_ready">All Core Permissions Ready</string>
+    <string name="onboarding_camera_title">Camera (On-Device Pose AI)</string>
+    <string name="onboarding_camera_desc">Counts push-ups, squats, lunges, jumping jacks, and planks strictly on-device with ML Kit Pose Detection. No video is saved or uploaded.</string>
+    <string name="onboarding_camera_steps">Tap Allow Camera -> Choose "While using the app". If previously denied, open App Settings -> Permissions -> Camera -> Allow.</string>
+    <string name="onboarding_camera_settings_hint">Enable Camera permission in App Settings to use live workout unlocking.</string>
+    <string name="onboarding_how_to_enable">How to enable in Settings</string>
+    <string name="btn_open_usage_settings">Open Usage Access Settings</string>
+    <string name="btn_review_usage_settings">Review Usage Access Settings</string>
+    <string name="btn_open_dnd_settings">Open DND Preview Settings</string>
+    <string name="btn_review_dnd_settings">Review DND Settings</string>
+    <string name="onboarding_quick_guard_title">Quick Guard &amp; Reliability</string>
+    <string name="onboarding_quick_guard_empty">One-tap auto-protect social, gaming, and short-form video apps.</string>
+    <string name="onboarding_quick_guard_status_format">Guarded: %1$d apps • Reels Blocked: %2$d apps</string>
+    <string name="onboarding_battery_title">Background Reliability (Optional)</string>
+    <string name="onboarding_battery_desc">Tap to open Battery Optimization settings so timers stay accurate.</string>
+    <string name="onboarding_battery_granted">Unrestricted background reliability active</string>
+    <string name="btn_onboarding_continue_later">Continue Setup Later</string>
+    <string name="onboarding_privacy_footer">Play-Protect Safe • 100% On-Device Privacy</string>
+
+    <!-- Tasks, Alarms & Study Page Counter -->
+    <string name="nav_tasks">Tasks</string>
+    <string name="notif_channel_reminders_name">Task Reminders &amp; Study Goals</string>
+    <string name="notif_channel_reminders_desc">Scheduled reminder nudges and reading study page alerts</string>
+    <string name="notif_channel_alarm_tasks_name">Scheduled Task Alarms</string>
+    <string name="notif_channel_alarm_tasks_desc">Alarm alerts linked to study goals or exercise challenges</string>
+</resources>

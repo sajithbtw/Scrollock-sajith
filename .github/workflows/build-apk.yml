@@ -1,0 +1,48 @@
+name: Build ScrollLock APK
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Accept Android SDK licenses and ensure SDK 36 tools
+        run: |
+          yes | sdkmanager --licenses || true
+          sdkmanager "platform-tools" "build-tools;36.0.0" || true
+          sdkmanager "platforms;android-36.1" || sdkmanager "platforms;android-36" || true
+
+      - name: Restore debug keystore
+        run: |
+          if [ ! -f debug.keystore ]; then
+            base64 -d debug.keystore.base64 > debug.keystore
+          fi
+
+      - name: Set up Gradle 9.3.1
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
+
+      - name: Build Debug APK
+        run: gradle :app:assembleDebug -Dorg.gradle.jvmargs="-Xmx3g" --no-daemon
+
+      - name: Upload ScrollLock Debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: ScrollLock-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk

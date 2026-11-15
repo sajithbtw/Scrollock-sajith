@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ScrollLock Midnight Obsidian-Indigo & Luminous Violet Dark Palette -->
+    <color name="sl_background">#080914</color>
+    <color name="sl_surface_card">#171933</color>
+    <color name="sl_surface_elevated">#1E2142</color>
+    <color name="sl_surface_subtle">#121429</color>
+    <color name="sl_border">#333663</color>
+
+    <color name="sl_text_primary">#F6F7FC</color>
+    <color name="sl_text_secondary">#A3A7CE</color>
+    <color name="sl_text_tertiary">#70759E</color>
+
+    <color name="sl_accent">#A78BFF</color>
+    <color name="sl_accent_strong">#7C5CFF</color>
+    <color name="sl_accent_soft">#307C5CFF</color>
+    <color name="sl_on_accent">#F6F7FC</color>
+
+    <color name="sl_status_active">#4ADE80</color>
+    <color name="sl_status_warning">#F59E0B</color>
+    <color name="sl_status_warning_soft">#2EF59E0B</color>
+    <color name="sl_status_error">#FF5E73</color>
+
+    <color name="sl_nav_bg">#121429</color>
+    <color name="sl_nav_indicator">#407C5CFF</color>
+    <color name="sl_ring_track">#333663</color>
+</resources>
